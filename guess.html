@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="gamecontainer">
+    <header class="uppercontainer">
+        <div id="playagain" onclick="reloadpage()"> <a href="./guess.html"></a>
+            Play Again</div>
+        <div id="between1to100">(between 1 to 100)</div>
+    </header>
+
+    <section class="middlecontainer">
+        <div class="title">Guess My Number</div>
+        <div id="number">
+            <span class="rightnumber">?</span>
+            <div class="line"></div>
+        </div>
+    </section>  
+
+    <section class="bottomcontainer">
+        <div class="bottomleftcontainer">
+            <input type="number" name="" id="guessnumber">
+            <button id="check" onclick="checknumber()" type="submit">Check!</button>
+        </div>
+        <div class="bottomrightcontainer">
+            <div id="numberstatus">Start Guessing...</div>
+            <div class="chance"> <img src="./images/100.png" alt=""> Chances: <span id="chances">100</span></div>
+            <div class="highscore"> <img src="./images/medal.png" alt=""> Highscore: <span id="highscore">0</span></div>
+        </div>
+    </section>
+        </div>
+        <script src="./script2.js"></script>
+</body>
+</html>

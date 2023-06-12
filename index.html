@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="maincontainer">
+        
+        <div class="heading"><h1>DOM HANDS-ON</h1></div>
+        <hr>
+        <div class="container">
+            <div class="question">Q1.Write the code to access element which is having id as "text"</div>
+            <div id="text"></div>
+        </div>
+        <br> 
+        <!-- question 2 -->
+        <div class="container">
+            <div class="question">Q2. Write the code to access element which is having tag as "h1"</div>
+            <div><h1></h1></div>
+        </div>
+        <br> 
+        <!-- question 3 -->
+        <div class="container">
+            <div class="question">Q3. Write the code to access element which is having class as "box"</div>
+            <div class="box"></div>
+        </div>
+        <br>
+        <!-- question 4 -->
+        <div class="container">
+            <div class="question">Q4. "Change the heading from "Hello" to "Hello World" using DOM functions"</div>
+            <div><h1>HELLO</h1></div>
+            </div>
+            <br>
+        <!-- question 5 -->
+        <div class="container ">
+            <div class="question">Q5.Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</div>
+            <div class="content">Hello World</div>
+            <br>
+            <button class="container5" onclick="changecontent()">Replace Text</button>
+        </div>
+        <br>
+        <!-- question 6 -->
+        <div class="container">
+            <div class="question">Q6."Hello Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</div>
+            <div> <h1>HELLO</h1> </div>
+        </div>
+        <br>
+        <!-- question 7 -->
+        <div class="container">
+        <div class="question">Q7.Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</div>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+        <div>
+            <button class="btncenter" onclick="changedirection()">change direction</button>
+        </div>
+    </div>
+        <br> <br>
+        <!-- question 10 -->
+        <div class="container">
+            <div class="question">
+                Q8.	What’s the difference between window vs document?
+            </div>
+            <table border="1px solid black" cellspacing="0" >
+                <tr>
+                   <th>document</th>
+                   <th>window</th>
+                </tr>
+                <tr>
+                   <td>It represents any HTML document or web page that is loaded in the browser.</td>
+                   <td>It represents a browser window or frame that displays the contents of the webpage.  </td>
+                </tr>
+                <tr>
+                   <td>It is loaded inside the window.</td>
+                   <td>It is the very first object that is loaded in the browser. </td>
+                </tr>
+                <tr>
+                   <td>All the tags, elements with attributes in HTML are part of the document.</td>
+                   <td>Global objects, functions, and variables of JavaScript are members of the window object.</td>
+                </tr>
+                <tr>
+                   <td>Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title</td>
+                   <td>Properties of the window object cannot be accessed by the document object.</td>
+                </tr>
+                <tr>
+                   <td>syntax:
+       
+                      document.propertyname;</td>
+                   <td>syntax:
+       
+                      window.propertyname;</td>
+                </tr>
+             </table>
+        </div>
+        <br>
+        <!-- question 9 -->
+        <div class="container">
+            <div class="question">
+                Q9	Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second
+            </div>
+            <span id="hh"></span>
+            <span id="mm"></span>
+            <span id="ss"></span>
+            <span id="ampm"></span>
+        </div>
+        <br>
+        <!-- question 10 -->
+        <div class="container">
+            <div class="question">
+                Q10 Guessing Game
+            </div>
+            <a href="./guess.html">Let's play a Guessing Game</a>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
